@@ -1,13 +1,25 @@
+h1 {
+  color: white;
+  font-weight: 00;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
 select, input, textarea{
   width: 80%;
   text-align-last: center;
   margin: 0px;
   padding: 0;
   border-radius: 5px;
+  border:none;
+  /* color:  rgba(255,255,255,.7); */
+  color: #707090;
 }
 select, input{
   height: 30px;
-  /* border: none; */
+  text-transform: uppercase;
+
 }
 
 textarea {
@@ -16,10 +28,18 @@ textarea {
 }
 
 select {
-  border: none;
+  font-weight: 400;
+  font-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1255/caret--down-15.png);
   background-position: right;
   background-repeat: no-repeat;
+}
+
+input {
+  background: lightblue;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
 }

@@ -6,4 +6,5 @@ body {
   height: 300px;
   text-align: center;
   border-style: solid;
+  background-image: linear-gradient( rgba(35,43,85,0.75), rgba(35,43,85,0.95));
 }
