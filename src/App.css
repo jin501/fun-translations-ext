@@ -1,0 +1,25 @@
+select, input, textarea{
+  width: 80%;
+  text-align-last: center;
+  margin: 0px;
+  padding: 0;
+  border-radius: 5px;
+}
+select, input{
+  height: 30px;
+  /* border: none; */
+}
+
+textarea {
+  margin-top: 7px;
+  height: 80px;
+}
+
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1255/caret--down-15.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
