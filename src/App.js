@@ -42,16 +42,32 @@ class App extends Component {
           <h1>Weird Translations</h1>
         </header>
 
+        <div className="Tabs">
+          <div className="Tab">
+            <a className="active" href="#">Original text</a>
+          </div>
+          <div className="Tab">
+            <a className="inactive"
+              href="#">Translation</a>
+          </div>
+        </div>
+
         <form onSubmit={this.handleSubmit}>
           <DropDown />
+          <div className="textarea">
           <textarea
             value={this.state.text}
             onChange={this.handleInputChange}
             placeholder="Type or highlight text to translate.."
             type="text">
           </textarea>
+        </div>
           <input type="submit" value="translate" />
         </form>
+
+        <div className="footer">
+          <a href="">Contact me</a>
+        </div>
       </div>
     );
   }
