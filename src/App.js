@@ -16,6 +16,10 @@ class App extends Component {
   handleInputChange = (e) => {
    this.setState({text: e.target.value});
 }
+  handleHighlight = (e) => {
+    let highlightText = window.getSelection();
+   this.setState({text: highlightText.toString()});
+}
 
   handleSubmit = (e) => {
     // debugger;
@@ -56,8 +60,9 @@ class App extends Component {
           <DropDown />
           <div className="textarea">
           <textarea
-            value={this.state.text}
+            value={this.state.highlighted || this.state.text}
             onChange={this.handleInputChange}
+            onFocus={this.handleHighlight}
             placeholder="Type or highlight text to translate.."
             type="text">
           </textarea>
@@ -66,7 +71,7 @@ class App extends Component {
         </form>
 
         <div className="footer">
-          <a href="">Contact me</a>
+          <a href="https://sol-jin.com">Contact me</a>
         </div>
       </div>
     );
